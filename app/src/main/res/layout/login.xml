@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/fazer_login"
+        android:id="@+id/fazerLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Faça seu Login"
@@ -14,13 +14,13 @@
         android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/digita_usuario"
+        android:id="@+id/digitaUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Digite seu usuario" />
 
     <EditText
-        android:id="@+id/campo_usuario"
+        android:id="@+id/campoUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -29,7 +29,7 @@
         android:hint="Usuario"/>
 
     <TextView
-        android:id="@+id/digita_senha"
+        android:id="@+id/digitaSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Digite sua senha" />
@@ -43,16 +43,16 @@
         android:hint="Senha"/>
 
     <Button
-        android:id="@+id/botao_login"
+        android:id="@+id/botaoLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
         android:text="Login" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagemLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_login" />
+        />
 
 </LinearLayout>
