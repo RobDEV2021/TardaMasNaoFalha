@@ -9,7 +9,7 @@
         android:id="@+id/fazerLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Faça seu Login"
+        android:text="@string/mensagem_Login"
         android:textSize="18dp"
         android:textAlignment="center"/>
 
