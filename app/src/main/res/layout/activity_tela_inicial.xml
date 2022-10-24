@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".TelaInicialActivity">
+    <include layout="@layout/toolbar" android:id="@+id/toolbarInclude"/>
 
     <TextView
         android:id="@+id/mensagemTelainicial"

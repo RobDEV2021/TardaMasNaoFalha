@@ -36,7 +36,12 @@ class TelaInicialActivity : DebugActivity() {
         val nome_usuario = params?.getString("nome_usuario")
         binding.mensagemTelainicial.text = "Bem vindo $nome_usuario"
 
-        binding.botaoSair.setOnClickListener {cliqueSair()}
+        setSupportActionBar(binding.toolbarInclude.toolbar)
+
+        supportActionBar?.title = "Paises"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+       // binding.botaoSair.setOnClickListener {cliqueSair()}
     }
 
     fun cliqueSair() {
@@ -69,23 +74,19 @@ class TelaInicialActivity : DebugActivity() {
         val id = item?.itemId
 
         if  (id == R.id.action_buscar) {
-            Toast.makeText(context, "Botão de buscar", Toast.LENGTH_LONG).show()
-        } else if (id == R.id.action_atualizar) {
-            binding.progressAtualizar.visibility = View.VISIBLE
-            Handler(Looper.getMainLooper()).postDelayed(
-                {
-                    binding.progressAtualizar.visibility = View.GONE
-                },
-                5000
-            )
-        } else if (id == R.id.action_config) {
-            Toast.makeText(context, "Botão de configuracoes", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "clicou buscar", Toast.LENGTH_LONG).show()
+        }
+        else if (id == R.id.action_atualizar) {
+            Toast.makeText(this, "clicou atualizar", Toast.LENGTH_LONG).show()
+        }
+         else if (id == R.id.action_adicionar) {
+            Toast.makeText(this, "clicou adicionar", Toast.LENGTH_LONG).show()
         }
 
         else if (id == android.R.id.home) {
             finish()
         }
-        return super.onOptionsItemSelected(item)
+        return true             //super.onOptionsItemSelected(item)
     }
 
 }
