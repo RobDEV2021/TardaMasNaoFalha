@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fazerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensagem_Login"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/digitaUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu usuario" />
+
+    <EditText
+        android:id="@+id/campoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Usuario"
+        android:hint="Usuario"/>
+
+    <TextView
+        android:id="@+id/digitaSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite sua senha" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Senha"/>
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Login" />
+
+    <ImageView
+        android:id="@+id/imagemLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

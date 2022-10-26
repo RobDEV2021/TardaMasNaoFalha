@@ -14,6 +14,13 @@
         android:theme="@style/Theme.TardaMasNaoFalha"
         tools:targetApi="31">
         <activity
+            android:theme="@style/AppTheme.toolbar"
+            android:name=".TelaInicialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DebugActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
